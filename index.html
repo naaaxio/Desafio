@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Encriptador</title>
+    <title>Encriptador</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="Encriptar">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <textarea name="texto" class="texto" id="texto"  rows="10"
+                placeholder="Ingresa el texto aqui"></textarea>
         </div>
         <div class="terminos">
-            <p>Solo letras minusculas y sin acento</p>
+            <p>Solo letras minusculas, con vocales y sin acento</p>
         </div>
         <div class="botones">
-            <input type="button" class="Encriptar" value="Encriptar" onclick="encriptar()">
-            <input type="button" class="Desencriptar" value="Desencriptar" onclick="desencriptar()">
+            <input type="button" class="boton_encriptar" value="Encriptar" onclick="encriptar()">
+            <input type="button" class="boton_desencriptar" value="Desencriptar" onclick="desencriptar()">
+            <input type="button" class="boton_limpiar" value="Nuevo Intento" onclick="limpiar()">
         </div>
-    </div>
-    <div class="Encriptado">
-        <img src="" alt="" id="">
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo_mensaje">Ningun mensaje encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        <div class="Encriptado">
+            <img src="./img/muñeco.png" alt="" id="">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo_mensaje">Ningun mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+            </div>
+            
         </div>
     </div>
     <script src="app.js"></script>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Ignacio Valdivia Gonzalez</p>
+        <p>Diseñado y desarrollado por Ignacio Valdivia Gonzalez</p>
+        <div>
+            <a href="https://github.com/naaaxio" target="_blank" style="color: #0077B5;">Github</a> |
+            <a href="mailto:i.jvaldiviag@gmail.com" style="color: #fff;">Contacto</a>
+        </div>
+    </footer>
 </body>
+
 </html>
